@@ -57,6 +57,14 @@ nslookup -type=MX example.com
 
 **Agents involved:**
 UA → MTA (SMTP) → MTA → MDA → UA (via IMAP/POP3)
+C: HELO domain.com
+S: 250 Hello
+C: MAIL FROM:<alice@domain.com>
+C: RCPT TO:<bob@domain.edu>
+C: DATA
+C: From:..., To:..., Subject:...
+C: . (точка — конец письма)
+C: QUIT
 
 
 | Agent     | Role                                                |
