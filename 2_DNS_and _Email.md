@@ -56,6 +56,8 @@ nslookup -type=MX example.com
 4. Bob retrieves it using **IMAP** or **POP3** with his **UA**
 
 **Agents involved:**
+UA → MTA (SMTP) → MTA → MDA → UA (via IMAP/POP3)
+
 
 | Agent     | Role                                                |
 | --------- | --------------------------------------------------- |
