@@ -79,6 +79,3 @@ Accept: text/html
 > 📌 The request always starts from the **client** and follows the **HTTP protocol over TCP**, usually port 80 or 443 (HTTPS).
 ```
 
-📌 Это уже выверено и протестировано: не сломается ни в тёмной, ни в светлой теме GitHub, таблицы не развалятся.
-
-Готов перейти к следующему — `Topic E: NAT, PAT, DMZ`?
