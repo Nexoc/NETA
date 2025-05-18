@@ -1,40 +1,71 @@
-✅ Topic G: Fault, Error, Failure
-Одна из ключевых теоретических тем, встречалась в обоих экзаменах (2022 и 2024).
+## Topic G: Fault, Error, Failure
 
+**Covers:** Definitions, relations between terms, examples  
+_Asked in both 2022 and 2024 exams_
 
-23. Explain fault, error, and failure. Give an example
-✅ Answer:
-These three terms describe different stages of a system problem — from cause to visible effect:
+---
 
-Term	Meaning
-Fault	A defect or problem in the system — the root cause
-Error	The system is in an invalid or incorrect state due to a fault
-Failure	The system's observable behavior deviates from the expected
+### 23. Explain fault, error, and failure. Give an example
 
-📌 Chain: Fault → Error → Failure
+**Answer:**
 
-💡 Example 1: Software Bug
-Stage	Example
-Fault	Programmer writes buggy code: division by zero
-Error	At runtime, a division-by-zero occurs → invalid state
-Failure	The application crashes or hangs
+These terms describe **stages of a problem in a system**:
 
-💡 Example 2: Network Service (bind9 DNS server)
-Stage	Example
-Fault	Wrong DNS zone file config (e.g., missing semicolon)
-Error	Bind9 loads incorrect data into memory → DNS zone not loaded
-Failure	DNS requests for that domain fail — users cannot resolve names
+| Term       | Meaning                                                   |
+|------------|-----------------------------------------------------------|
+| **Fault**  | A defect or root cause in the system                      |
+| **Error**  | An invalid or incorrect state caused by a fault           |
+| **Failure**| Visible deviation from expected system behavior           |
 
-📌 Types of Faults
-Type	Description	Example
-Transient	Temporary, disappears by itself	Power surge
-Intermittent	Appears randomly, sometimes works	Flaky network card
-Permanent	Stays until fixed	Burnt-out cable, software bug
+> 📌 Chain: **Fault → Error → Failure**
 
-📌 Prevention and Recovery Strategies
-Strategy	What it does
-Fault prevention	Design and testing to avoid faults
-Fault tolerance	System keeps working despite faults (e.g. redundancy)
-Fault removal	Debugging and patching
-Fault forecasting	Predict future failures (e.g. SMART disks)
+---
+
+### 💡 Example 1: Software Bug
+
+| Stage     | Example                                           |
+|-----------|---------------------------------------------------|
+| Fault     | Programmer writes buggy code (e.g., division by zero) |
+| Error     | Division by zero occurs at runtime → crash state  |
+| Failure   | The program crashes or hangs                      |
+
+---
+
+### 💡 Example 2: DNS Server (e.g., bind9)
+
+| Stage     | Example                                                      |
+|-----------|---------------------------------------------------------------|
+| Fault     | Wrong syntax in zone file (e.g., missing semicolon)          |
+| Error     | Bind9 loads invalid data → zone not loaded                    |
+| Failure   | DNS queries fail → users cannot resolve domain names          |
+
+---
+
+### Types of Faults
+
+| Type          | Description                           | Example                          |
+|---------------|---------------------------------------|----------------------------------|
+| **Transient** | Temporary, disappears by itself       | Power surge                      |
+| **Intermittent** | Appears randomly, comes and goes   | Faulty NIC or loose cable        |
+| **Permanent** | Stays until manually fixed            | Burned-out hardware, logic bug   |
+
+---
+
+### Prevention and Recovery Strategies
+
+| Strategy             | What it does                                                  |
+|----------------------|---------------------------------------------------------------|
+| **Fault prevention** | Avoid faults during design/testing                            |
+| **Fault tolerance**  | System keeps working despite faults (e.g., redundancy)        |
+| **Fault removal**    | Debugging, patching, correcting errors                         |
+| **Fault forecasting**| Predict faults using analysis (e.g., SMART for disks)         |
+
+---
+
+> 📌 On the exam, you may be asked to:  
+> - Define the terms clearly  
+> - Show the relationship between them  
+> - Give a **real-world example**
+```
+
 
