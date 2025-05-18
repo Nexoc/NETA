@@ -99,4 +99,3 @@ Firewalls are placed at **strategic points** in the network to control and secur
 | Personal Firewall | End-user devices  | Local desktop/laptops    |
 ```
 
-Готов перейти к `Topic G: Fault, Error, Failure`?
