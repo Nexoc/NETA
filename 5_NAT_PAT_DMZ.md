@@ -73,4 +73,3 @@ Minimize risk — even if a public-facing server is compromised, attackers **can
 > 📌 Internal databases and sensitive systems **must NOT be placed in the DMZ**.
 ```
 
-Готов сделать следующее — `Topic F: Firewalls and Security`?
