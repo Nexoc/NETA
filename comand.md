@@ -1,44 +1,44 @@
 
 # 🧠 Command Pattern in Java
 
-The **Command Pattern** is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. It decouples the sender and the receiver of the request.
+Das **Command Pattern** (Befehlsmuster) ist ein Verhaltensentwurfsmuster, das eine Anforderung in ein eigenständiges Objekt kapselt. Dadurch wird der Sender einer Anforderung vom Empfänger entkoppelt.
 
 ---
 
 ## 🔧 Problem
 
-You want to parameterize objects with operations, delay execution, queue commands, or support undo/redo. Hardcoding actions into buttons or UI elements tightly couples the logic and limits flexibility.
+Du möchtest Objekte mit Operationen parametrieren, Ausführungen verzögern, Befehle in eine Warteschlange stellen oder Undo/Redo unterstützen. Wenn die Aktionen direkt im UI (z. B. Button) kodiert sind, wird die Flexibilität eingeschränkt.
 
 ---
 
-## 📦 Structure
+## 📦 Struktur
 
-| Role             | Responsibility |
-|------------------|----------------|
-| **Command**       | Declares `execute()` method |
-| **ConcreteCommand** | Implements `Command`, delegates action to the Receiver |
-| **Receiver**      | Knows how to perform the work |
-| **Invoker**       | Asks the command to carry out the request |
-| **Client**        | Creates commands and sets up relationships between objects |
+| Rolle              | Verantwortung |
+|--------------------|----------------|
+| **Command**         | Deklariert die Methode `execute()` |
+| **ConcreteCommand** | Implementiert `Command`, delegiert die Aktion an den Receiver |
+| **Receiver**        | Kennt die konkreten Aktionen (z. B. Licht ein-/ausschalten) |
+| **Invoker**         | Startet die Ausführung des Befehls |
+| **Client**          | Erstellt Befehle und konfiguriert das System |
 
 ---
 
-## 🧱 Code Example
+## 🧱 Beispiel in Java
 
-### ✅ Receiver
+### ✅ Empfänger (Receiver)
 
 ```java
 public class Light {
     public void turnOn() {
-        System.out.println("Light is ON");
+        System.out.println("Licht ist AN");
     }
     public void turnOff() {
-        System.out.println("Light is OFF");
+        System.out.println("Licht ist AUS");
     }
 }
 ````
 
-### ✅ Command Interface
+### ✅ Befehl-Interface (Command)
 
 ```java
 public interface Command {
@@ -46,7 +46,7 @@ public interface Command {
 }
 ```
 
-### ✅ Concrete Commands
+### ✅ Konkrete Befehle (ConcreteCommand)
 
 ```java
 public class LightOnCommand implements Command {
@@ -76,7 +76,7 @@ public class LightOffCommand implements Command {
 }
 ```
 
-### ✅ Invoker
+### ✅ Auslöser (Invoker)
 
 ```java
 public class RemoteControl {
@@ -92,7 +92,7 @@ public class RemoteControl {
 }
 ```
 
-### ✅ Client Code
+### ✅ Anwendung (Client)
 
 ```java
 public class Main {
@@ -105,48 +105,49 @@ public class Main {
         RemoteControl remote = new RemoteControl();
 
         remote.setCommand(lightsOn);
-        remote.pressButton(); // Output: Light is ON
+        remote.pressButton(); // Ausgabe: Licht ist AN
 
         remote.setCommand(lightsOff);
-        remote.pressButton(); // Output: Light is OFF
+        remote.pressButton(); // Ausgabe: Licht ist AUS
     }
 }
 ```
 
 ---
 
-## ✅ Benefits
+## ✅ Vorteile
 
-* Decouples the sender and receiver
-* Easy to add new commands without changing existing code
-* Supports logging, queuing, undo/redo
-* Cleaner, testable design
-
----
-
-## ❌ Drawbacks
-
-* Requires more classes (boilerplate)
-* Slight complexity overhead
+* Entkopplung von Sender und Empfänger
+* Neue Befehle können leicht hinzugefügt werden
+* Unterstützt Logging, Warteschlangen, Undo/Redo
+* Sauberes, testbares Design
 
 ---
 
-## 🧪 Extensions
+## ❌ Nachteile
 
-* Implement `undo()` method for reversible actions
-* Create a `MacroCommand` to run multiple commands at once
-* Store commands in history for undo functionality
-
----
-
-## 📚 Related Patterns
-
-* **Strategy** – Encapsulates algorithms; Command encapsulates actions
-* **Memento** – Often used with Command to support undo
-* **Observer** – Can notify receivers about command execution
+* Mehr Klassen (Overhead)
+* Etwas komplexere Architektur
 
 ---
 
-> This is a simplified example. Real-world usage often involves more dynamic and flexible command handling (e.g., command queues, undo stacks, or serialized commands).
+## 🧪 Erweiterungen
+
+* `undo()`-Methode für Aktionen mit Rückgängig-Funktion
+* `MacroCommand`, um mehrere Befehle auf einmal auszuführen
+* Befehle in einer History speichern
+
+---
+
+## 📚 Verwandte Muster
+
+* **Strategy** – Kapselt Algorithmen; Command kapselt Aktionen
+* **Memento** – Oft mit Command für Undo-Funktionalität kombiniert
+* **Observer** – Zum Reagieren auf Befehlsausführungen geeignet
+
+---
+
+> Dies ist ein vereinfachtes Beispiel. In der Praxis kann das Muster mit Befehlswarteschlangen, History oder Netzwerkbefehlen erweitert werden.
 
 ```
+
