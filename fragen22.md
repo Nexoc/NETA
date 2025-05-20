@@ -128,13 +128,13 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 - **Fault:** Fehler im Code
 - **Error:** sichtbarer Fehler, aber unklar ob Ursache Server
 - **Failure:** z. B. Server ist komplett offline
-
+- 1
 - Fault: Die Ursache eines Problems, z. B. ein Programmierfehler oder eine fehlerhafte Konfiguration.
 - Beispiel: Eine falsche IP-Adresse wurde im DNS-Record eingetragen.
-
+- 2
 - Error: Eine erkennbare Abweichung vom erwarteten Verhalten.
 - Beispiel: Der Webbrowser zeigt „Server nicht gefunden“ an.
-
+- 3
 - Failure: Das tatsächliche Versagen des Systems, eine Funktion zu erfüllen.
 - Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
 
