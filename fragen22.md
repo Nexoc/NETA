@@ -27,10 +27,9 @@
 ### Name at least two transport layer protocols. (1 point)
 
 
-- Der Transport Layer ist für die Ende-zu-Ende-Kommunikation zwischen Prozessen zuständig. 
-- Er stellt durch Fehlererkennung, Flusskontrolle und ggf. Wiederholung sicher, dass Daten zuverlässig ankommen.
-	
-- Der Network Layer ist für die Übertragung von Paketen zwischen Hosts verantwortlich und kümmert sich um Routing und IP-Adressierung.
+- Transport Layer: Prozess-zu-Prozess, Ports, Zuverlässigkeit
+- Network Layer: Host-zu-Host, IP, Routing
+
 	
 - Zwei Transportprotokolle: TCP und UDP
 
@@ -134,15 +133,9 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 
 ### 12. Explain the terms Fault, Error and Failure using an example from the labs. (3 points)
 
-- **Fault:** Fehler im Code
-- **Error:** sichtbarer Fehler, aber unklar ob Ursache Server
-- **Failure:** z. B. Server ist komplett offline
-- 1
-
-- **Fault:** Falsche IP im DNS-Record eingetragen  
-- **Error:** Browser zeigt „Seite nicht erreichbar“  
-- **Failure:** Webserver nicht erreichbar / keine Antwort
-
+- Fault: Falsche IP im DNS-Record eingetragen  
+- Error: Browser zeigt „Seite nicht erreichbar“  
+- Failure: Webserver nicht erreichbar / keine Antwort
 
 ---
 
