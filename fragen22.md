@@ -110,9 +110,9 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 
 **Typische Hosts/Services in der DMZ:**
 
-1. Webserver
-2. Mailserver
-3. DNS-Server
+* 1. Webserver
+* 2. Mailserver
+* 3. DNS-Server
 
 **Begründung:**
 - Diese Server müssen von außen erreichbar sein, sollen aber bei einem Angriff das interne Netzwerk nicht gefährden. 
@@ -123,18 +123,18 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 
 ### 12. Explain the terms Fault, Error and Failure using an example from the labs. (3 points)
 
-**Fault:** Fehler im Code
-**Error:** sichtbarer Fehler, aber unklar ob Ursache Server
-**Failure:** z. B. Server ist komplett offline
+- **Fault:** Fehler im Code
+- **Error:** sichtbarer Fehler, aber unklar ob Ursache Server
+- **Failure:** z. B. Server ist komplett offline
 
-Fault: Die Ursache eines Problems, z. B. ein Programmierfehler oder eine fehlerhafte Konfiguration.
-Beispiel: Eine falsche IP-Adresse wurde im DNS-Record eingetragen.
+- Fault: Die Ursache eines Problems, z. B. ein Programmierfehler oder eine fehlerhafte Konfiguration.
+- Beispiel: Eine falsche IP-Adresse wurde im DNS-Record eingetragen.
 
-Error: Eine erkennbare Abweichung vom erwarteten Verhalten.
-Beispiel: Der Webbrowser zeigt „Server nicht gefunden“ an.
+- Error: Eine erkennbare Abweichung vom erwarteten Verhalten.
+- Beispiel: Der Webbrowser zeigt „Server nicht gefunden“ an.
 
-Failure: Das tatsächliche Versagen des Systems, eine Funktion zu erfüllen.
-Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
+- Failure: Das tatsächliche Versagen des Systems, eine Funktion zu erfüllen.
+- Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
 
 
 ---
