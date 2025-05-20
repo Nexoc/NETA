@@ -96,11 +96,11 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 
 ### 10. What is the difference between Static NAT and Dynamic NAT? Describe a use case for both technologies and explain the technologies based on these use cases. (4 points)
 
-**Static NAT:** 1 private IP = 1 öffentliche IP → sinnvoll für Server
-**Dynamic NAT:** mehrere interne Geräte nutzen dynamisch zugewiesene öffentliche IPs
+- **Static NAT:** 1 private IP = 1 öffentliche IP → sinnvoll für Server
+- **Dynamic NAT:** mehrere interne Geräte nutzen dynamisch zugewiesene öffentliche IPs
 
-**Szenario Static:** Webserver ist öffentlich erreichbar → braucht feste IP
-**Szenario Dynamic:** internes Netzwerk mit mehreren Geräten
+- **Szenario Static:** Webserver ist öffentlich erreichbar → braucht feste IP
+- **Szenario Dynamic:** internes Netzwerk mit mehreren Geräten
 
 ---
 
@@ -108,17 +108,17 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 ### Which Hosts/Servers/Services would you place in a DMZ? 
 ### Justify your answer. (3 points)
 
-**DMZ (Demilitarisierte Zone)** ist ein Netzwerkbereich zwischen dem internen Netzwerk und dem Internet, der als Pufferzone dient.
+- **DMZ (Demilitarisierte Zone)** ist ein Netzwerkbereich zwischen dem internen Netzwerk und dem Internet, der als Pufferzone dient.
 
-**Typische Hosts/Services in der DMZ:**
+- **Typische Hosts/Services in der DMZ:**
 
 * 1. Webserver
 * 2. Mailserver
 * 3. DNS-Server
 
-**Begründung:**
-- Diese Server müssen von außen erreichbar sein, sollen aber bei einem Angriff das interne Netzwerk nicht gefährden. 
-- Durch die Platzierung in der DMZ wird verhindert, dass ein kompromittierter öffentlicher Server direkten Zugriff auf interne Systeme erhält.
+- **Begründung:**
+* Diese Server müssen von außen erreichbar sein, sollen aber bei einem Angriff das interne Netzwerk nicht gefährden. 
+* Durch die Platzierung in der DMZ wird verhindert, dass ein kompromittierter öffentlicher Server direkten Zugriff auf interne Systeme erhält.
 
 
 ---
