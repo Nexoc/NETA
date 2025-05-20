@@ -23,7 +23,8 @@
 
 ---
 
-### 3. What is the main task of the transport layer compared to the network layer? Name at least two transport layer protocols. (1 point)
+### 3. What is the main task of the transport layer compared to the network layer? 
+### Name at least two transport layer protocols. (1 point)
 
 
 - Der Transport Layer ist für die Ende-zu-Ende-Kommunikation zwischen Prozessen zuständig. 
@@ -36,7 +37,8 @@
 
 ---
 
-### 4. Draw and explain the UDP header. Name and explain all UDP header fields. (2 points)
+### 4. Draw and explain the UDP header. 
+### Name and explain all UDP header fields. (2 points)
 
 - 1. Source Port (16 Bit) – Portnummer des Absenders
 - 2. Destination Port (16 Bit) – Portnummer des Empfängers
@@ -54,7 +56,10 @@
 
 ---
 
-### 6. The following HTTP message was transmitted. What is the full URL of the requested document? Was the message sent from a server or from a client? Which HTTP method was used? (2 points)
+### 6. The following HTTP message was transmitted. 
+### What is the full URL of the requested document? 
+### Was the message sent from a server or from a client? 
+### Which HTTP method was used? (2 points)
 
 - 1. `www.example.com/index.html`
 - 2. Von Client gesendet
@@ -70,7 +75,10 @@
 
 ---
 
-### 8. Amanda ([amanda@cannelloni.it](mailto:amanda@cannelloni.it)) sends an email from her email-client to Frederic ([frederic@gyoza.com](mailto:frederic@gyoza.com)). Frederic receives the email with his email client. Which services (agents) and which application layer protocols are used? Draw a sketch of the delivery process. (3 points)
+### 8. Amanda ([amanda@cannelloni.it](mailto:amanda@cannelloni.it)) sends an email from her email-client to Frederic ([frederic@gyoza.com](mailto:frederic@gyoza.com)). 
+### Frederic receives the email with his email client. 
+### Which services (agents) and which application layer protocols are used? 
+### Draw a sketch of the delivery process. (3 points)
 
 **Agents:**
 
@@ -94,7 +102,8 @@ UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMA
 
 ---
 
-### 10. What is the difference between Static NAT and Dynamic NAT? Describe a use case for both technologies and explain the technologies based on these use cases. (4 points)
+### 10. What is the difference between Static NAT and Dynamic NAT? 
+### Describe a use case for both technologies and explain the technologies based on these use cases. (4 points)
 
 - **Static NAT:** 1 private IP = 1 öffentliche IP → sinnvoll für Server
 - **Dynamic NAT:** mehrere interne Geräte nutzen dynamisch zugewiesene öffentliche IPs
