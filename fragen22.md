@@ -43,6 +43,9 @@
 - 2. Destination Port (16 Bit) – Portnummer des Empfängers
 - 3. Length – Länge des gesamten UDP-Headers und der Nutzdaten
 - 4. Checksum – zur Fehlererkennung (Integritätsprüfung der Daten)
+- 5. Data
+![image](https://github.com/user-attachments/assets/f7b0a386-e02e-4222-bcbc-b4c42beb2501)
+
 
 ---
 
