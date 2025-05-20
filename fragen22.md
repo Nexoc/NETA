@@ -25,9 +25,14 @@
 
 ### 3. What is the main task of the transport layer compared to the network layer? Name at least two transport layer protocols. (1 point)
 
-Die Transportschicht stellt eine Verbindung zwischen Anwendungen her.
-Die Netzwerkschicht verbindet Geräte/IPs.
-Beispiele für Transportprotokolle: TCP, UDP
+
+Der Transport Layer ist für die Ende-zu-Ende-Kommunikation zwischen Prozessen zuständig. 
+Er stellt durch Fehlererkennung, Flusskontrolle und ggf. Wiederholung sicher, dass Daten zuverlässig ankommen.
+	
+Der Network Layer ist für die Übertragung von Paketen zwischen Hosts verantwortlich und kümmert sich um Routing und IP-Adressierung.
+	
+Zwei Transportprotokolle: TCP und UDP
+
 
 ---
 
