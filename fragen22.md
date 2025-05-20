@@ -156,5 +156,5 @@ Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
 - a. What is the difference between a stateful inspection firewall and a packet filtering firewall?
 - b. Describe an attack on a packet filtering firewall, which can be avoided by a stateful inspection firewall. (2 + 2 points)
 
-a) Stateful erkennt Verbindungsstatus, Packet Filter nur IP/Port
-b) Angriff: IP Spoofing – Paket sieht vertrauenswürdig aus, ist aber gefälscht
+- a) Stateful erkennt Verbindungsstatus, Packet Filter nur IP/Port
+- b) Angriff: IP Spoofing – Paket sieht vertrauenswürdig aus, ist aber gefälscht
