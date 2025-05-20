@@ -151,7 +151,9 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → POP3/IMAP → Bob (MUA)
 ---
 
 ### 11. Describe a problem you (could have) had during the labs. 
-### Which structured troubleshooting approach fits well to fix the problem? Which not? Which tools can be used for these approaches? 
+### Which structured troubleshooting approach fits well to fix the problem? 
+### Which not? 
+### Which tools can be used for these approaches? 
 ### Justify your answer. (3 Points)
 
 - **Problem:** Webserver konnte keine Verbindung zu 8.8.8.8 herstellen
