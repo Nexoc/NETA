@@ -4,10 +4,10 @@
 
 ### 1. Which of the following statements regarding client-server architectures for network applications are true or false? (2 points)
 
-✅ Der Server hat eine permanente (statische) IP-Adresse.
-✅ Der Client initiiert die Verbindung.
-❌ Der Server initiiert die Verbindung zum Client.
-❌ Client und Server haben gleichberechtigte Rollen.
+- ✅ Der Server hat eine permanente (statische) IP-Adresse.
+- ✅ Der Client initiiert die Verbindung.
+- ❌ Der Server initiiert die Verbindung zum Client.
+- ❌ Client und Server haben gleichberechtigte Rollen.
 
 ---
 
@@ -26,37 +26,39 @@
 ### 3. What is the main task of the transport layer compared to the network layer? Name at least two transport layer protocols. (1 point)
 
 
-Der Transport Layer ist für die Ende-zu-Ende-Kommunikation zwischen Prozessen zuständig. 
-Er stellt durch Fehlererkennung, Flusskontrolle und ggf. Wiederholung sicher, dass Daten zuverlässig ankommen.
+- Der Transport Layer ist für die Ende-zu-Ende-Kommunikation zwischen Prozessen zuständig. 
+- Er stellt durch Fehlererkennung, Flusskontrolle und ggf. Wiederholung sicher, dass Daten zuverlässig ankommen.
 	
-Der Network Layer ist für die Übertragung von Paketen zwischen Hosts verantwortlich und kümmert sich um Routing und IP-Adressierung.
+- Der Network Layer ist für die Übertragung von Paketen zwischen Hosts verantwortlich und kümmert sich um Routing und IP-Adressierung.
 	
-Zwei Transportprotokolle: TCP und UDP
+- Zwei Transportprotokolle: TCP und UDP
 
 
 ---
 
 ### 4. Draw and explain the UDP header. Name and explain all UDP header fields. (2 points)
 
-1. Source Port (16 Bit) – Portnummer des Absenders
-2. Destination Port (16 Bit) – Portnummer des Empfängers
-3. Length – Länge des gesamten UDP-Headers und der Nutzdaten
-4. Checksum – zur Fehlererkennung (Integritätsprüfung der Daten)
+- 1. Source Port (16 Bit) – Portnummer des Absenders
+- 2. Destination Port (16 Bit) – Portnummer des Empfängers
+- 3. Length – Länge des gesamten UDP-Headers und der Nutzdaten
+- 4. Checksum – zur Fehlererkennung (Integritätsprüfung der Daten)
 
 ---
 
-### 5. Given are the following DNS entries for the domain "mycampus.ac.at". You want to write an email to [marie.curie@mycampus.ac.at](mailto:marie.curie@mycampus.ac.at). What are the name and IP address of the responsible mail server? (1 point)
+### 5. Given are the following DNS entries for the domain "mycampus.ac.at". 
+### You want to write an email to [marie.curie@mycampus.ac.at](mailto:marie.curie@mycampus.ac.at). 
+### What are the name and IP address of the responsible mail server? (1 point)
 
-**Mailserver-Name:** post.mycampus.ac.at
-**IP-Adresse:** 192.168.0.80
+- **Mailserver-Name:** post.mycampus.ac.at
+- **IP-Adresse:** 192.168.0.80
 
 ---
 
 ### 6. The following HTTP message was transmitted. What is the full URL of the requested document? Was the message sent from a server or from a client? Which HTTP method was used? (2 points)
 
-1. `www.example.com/index.html`
-2. Von Client gesendet
-3. HTTP-Methode: GET
+- 1. `www.example.com/index.html`
+- 2. Von Client gesendet
+- 3. HTTP-Methode: GET
 
 ---
 
