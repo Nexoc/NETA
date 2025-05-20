@@ -44,10 +44,10 @@ Beispiel: BitTorrent
 ### In what kind of documents are such standards defined? 
 ### Which organization publishes these standards? (2 points)
 
-**Protokoll:** UDP (User Datagram Protocol)
-**OSI-Schicht:** Layer 4 – Transportschicht
-**Standardisierung:** Definiert in RFCs (Request for Comments)
-**Organisation:** IETF (Internet Engineering Task Force)
+- **Protokoll:** UDP (User Datagram Protocol)
+- **OSI-Schicht:** Layer 4 – Transportschicht
+- **Standardisierung:** Definiert in RFCs (Request for Comments)
+- **Organisation:** IETF (Internet Engineering Task Force)
 
 ---
 
@@ -68,14 +68,14 @@ Beispiel: BitTorrent
 ### 5. What is the TCP Flow Control mechanism? 
 ### Is the TCP Flow Control regulated by the sender or by the receiver? (3 points)
 
-TCP Flow Control ist dafür verantwortlich, dass ein Sender den Empfänger nicht mit Daten überflutet.
+- TCP Flow Control ist dafür verantwortlich, dass ein Sender den Empfänger nicht mit Daten überflutet.
 
-**Mechanismus:**
+* **Mechanismus:**
 
 * Der Empfänger teilt dem Sender über das "Receive Window" mit, wie viel er verarbeiten kann.
 * Der Sender passt seine Geschwindigkeit entsprechend an.
 
-✅ Kontrolle erfolgt durch den Empfänger.
+- ✅ Kontrolle erfolgt durch den Empfänger.
 
 ---
 
@@ -88,7 +88,7 @@ TCP Flow Control ist dafür verantwortlich, dass ein Sender den Empfänger nicht
 * TLD-Server: zuständig für Domains wie .com, .org, .at
 * Authoritative Nameserver: kennt die tatsächliche IP für die Domain (z. B. A, MX Record)
 
-Beispiel: [www.fh-campus.at](http://www.fh-campus.at) → Root verweist auf .at → TLD verweist auf fh-campus.at → Authoritative liefert IP
+- Beispiel: [www.fh-campus.at](http://www.fh-campus.at) → Root verweist auf .at → TLD verweist auf fh-campus.at → Authoritative liefert IP
 
 ---
 
@@ -96,7 +96,7 @@ Beispiel: [www.fh-campus.at](http://www.fh-campus.at) → Root verweist auf .at 
 ### Which services (agents) and which application layer protocols are used? 
 ### Draw a sketch of the delivery process, including the protocols and services (agents) for each step. (3 points)
 
-**Dienste:**
+- **Dienste:**
 
 * MUA: Mail User Agent (Alice & Bob)
 * MTA: Mail Transfer Agent
