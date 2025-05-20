@@ -144,10 +144,10 @@ Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
 ### Which not? 
 ### Justify your answer. (3 points)
 
-**Problem:** ping auf 8.8.8.8 nicht möglich
-**Geeignet:** Divide and Conquer
-**Nicht geeignet:** Top-Down
-**Begründung:** Schicht 3 war betroffen. schneller Fokus auf Routing/IP
+- **Problem:** ping auf 8.8.8.8 nicht möglich
+- **Geeignet:** Divide and Conquer
+- **Nicht geeignet:** Top-Down
+- **Begründung:** Schicht 3 war betroffen. schneller Fokus auf Routing/IP
 
 
 ---
