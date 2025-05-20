@@ -2,7 +2,7 @@
 
 ---
 
-### 1. Which of the following are application layer protocols (Layer 7)? (yes/no)? (1 point)
+### 1. Which of the following are application layer protocols (Layer 7)? (1 point)
 
 | Yes | No | Protocol |
 | --- | -- | -------- |
@@ -14,7 +14,8 @@
 
 ---
 
-### 2. Explain the P2P architecture for network applications. What are the advantages and disadvantages of this architecture? (3 points)
+### 2. Explain the P2P architecture for network applications. 
+### What are the advantages and disadvantages of this architecture? (3 points)
 
 **P2P-Architektur:**
 
@@ -38,7 +39,10 @@ Beispiel: BitTorrent
 
 ---
 
-### 3. In the following an internet standard protocol header is defined. What protocol does this header belong to? What network layer does this protocol belong to? In what kind of documents are such standards defined? Which organization publishes these standards? (2 points)
+### 3. In the following an internet standard protocol header is defined. 
+### What protocol does this header belong to? What network layer does this protocol belong to? 
+### In what kind of documents are such standards defined? 
+### Which organization publishes these standards? (2 points)
 
 **Protokoll:** UDP (User Datagram Protocol)
 **Netzwerkschicht:** OSI-Schicht 4 (Transportschicht)
@@ -47,7 +51,8 @@ Beispiel: BitTorrent
 
 ---
 
-### 4. What is a DHCP protocol? Name 4 parameters that can be configured via DHCP. (3 Points)
+### 4. What is a DHCP protocol? 
+### Name 4 parameters that can be configured via DHCP. (3 Points)
 
 DHCP (Dynamic Host Configuration Protocol) ist ein Protokoll, das IP-Adressen und andere Netzwerkinformationen automatisch an Geräte im Netzwerk vergibt.
 
@@ -60,7 +65,8 @@ DHCP (Dynamic Host Configuration Protocol) ist ein Protokoll, das IP-Adressen un
 
 ---
 
-### 5. What is the TCP Flow Control mechanism? Is the TCP Flow Control regulated by the sender or by the receiver? (3 points)
+### 5. What is the TCP Flow Control mechanism? 
+### Is the TCP Flow Control regulated by the sender or by the receiver? (3 points)
 
 TCP Flow Control (Datenflusskontrolle) ist ein Mechanismus, mit dem verhindert wird, dass der Sender den Empfänger mit zu vielen Daten überlastet.
 
@@ -72,7 +78,8 @@ TCP nutzt dazu das "Window"-Feld im Header.
 
 ---
 
-### 6. Explain the architecture of the Domain Name System! Which DNS servers from the DNS hierarchy are responsible for which domains? (3 points)
+### 6. Explain the architecture of the Domain Name System! 
+### Which DNS servers from the DNS hierarchy are responsible for which domains? (3 points)
 
 **PC → Lokaler DNS → Root DNS (.at, .com, .de) → TLD (example.at) → Authoritative DNS → zurück**
 
@@ -105,7 +112,8 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → IMAP/POP3 → Bob (MUA)
 
 ---
 
-### 8. How does PAT (Port Address Translation) differ from traditional NAT (Network Address Translation)? Provide a scenario where each would be preferable and discuss the technical reasons behind your choices. (3 points)
+### 8. How does PAT (Port Address Translation) differ from traditional NAT (Network Address Translation)? 
+### Provide a scenario where each would be preferable and discuss the technical reasons behind your choices. (3 points)
 
 **NAT:**
 
@@ -122,7 +130,9 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → IMAP/POP3 → Bob (MUA)
 
 ---
 
-### 9. Where can you place a firewall (minimum 3)? Describe all three placements by a use case. Justify your answer. (3 Points)
+### 9. Where can you place a firewall (minimum 3)? 
+### Describe all three placements by a use case. 
+### Justify your answer. (3 Points)
 
 1. Zwischen Internet und internem Netzwerk
    → Schutz vor externen Bedrohungen
@@ -141,7 +151,10 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → IMAP/POP3 → Bob (MUA)
 
 ---
 
-### 11. Describe a problem you (could have) had during the labs. Which structured troubleshooting approach fits well to fix the problem? Which not? Which tools can be used for these approaches? Justify your answer. (3 Points)
+### 11. Describe a problem you (could have) had during the labs. 
+### Which structured troubleshooting approach fits well to fix the problem? Which not? 
+### Which tools can be used for these approaches? 
+### Justify your answer. (3 Points)
 
 **Problem:** Webserver konnte 8.8.8.8 nicht pingen (via Gateway)
 **Geeigneter Ansatz:** Divide and Conquer (Layer 3 beginnen)
@@ -151,9 +164,10 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → IMAP/POP3 → Bob (MUA)
 
 ---
 
-### 12. a) Name and explain three differences between a Next Generation Firewall (NGFW) and a stateful inspection firewall. (3 Points)
+### 12. 
+### a) Name and explain three differences between a Next Generation Firewall (NGFW) and a stateful inspection firewall. (3 Points)
 
-b) Name and describe one attack for packet filtering firewalls. (1 Point)
+### b) Name and describe one attack for packet filtering firewalls. (1 Point)
 
 **a) NGFW vs Stateful Firewall**
 
