@@ -154,10 +154,10 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → POP3/IMAP → Bob (MUA)
 ### Which structured troubleshooting approach fits well to fix the problem? Which not? Which tools can be used for these approaches? 
 ### Justify your answer. (3 Points)
 
-**Problem:** Webserver konnte keine Verbindung zu 8.8.8.8 herstellen
-**Geeignet:** Divide and Conquer → Analyse ab Layer 3 (Netzwerk)
-**Nicht geeignet:** Top-down, weil kein Layer-7-Problem
-**Tools:** ping, traceroute, ip route
+- **Problem:** Webserver konnte keine Verbindung zu 8.8.8.8 herstellen
+- **Geeignet:** Divide and Conquer → Analyse ab Layer 3 (Netzwerk)
+- **Nicht geeignet:** Top-down, weil kein Layer-7-Problem
+- **Tools:** ping, traceroute, ip route
 
 ---
 
@@ -168,9 +168,9 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → POP3/IMAP → Bob (MUA)
 
 **NGFW:**
 
-* Erkennt Anwendungen unabhängig von Ports
-* Unterstützt Deep Packet Inspection (Layer 7)
-* Enthält IDS/IPS, URL-Filterung, Antivirus
+- * Erkennt Anwendungen unabhängig von Ports
+- * Unterstützt Deep Packet Inspection (Layer 7)
+- * Enthält IDS/IPS, URL-Filterung, Antivirus
 
 **Stateful Firewall:**
 
