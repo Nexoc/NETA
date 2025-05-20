@@ -76,10 +76,11 @@ Zwei Transportprotokolle: TCP und UDP
 * MTA (Mail Transfer Agent)
 * MDA (Mail Delivery Agent)
 
-**Protokoll:** SMTP
+**Protokoll:** SMTP und IMAP/POP3
 
 **Skizze:**
-[amanda@cannelloni.it](mailto:amanda@cannelloni.it) (UA) → SMTP → MTA → SMTP → MDA → SMTP → UA ([frederic@gyoza.com](mailto:frederic@gyoza.com))
+UA (amanda@cannelloni.it) -> durch SMTP -> MTA -> durch SMTP -> MTA -> durch IMAP/POP3 -> UA (frederic@gyoza.com)
+
 
 ---
 
@@ -101,11 +102,22 @@ Zwei Transportprotokolle: TCP und UDP
 
 ---
 
-### 11. What is a DMZ? Which Hosts/Servers/Services would you place in a DMZ? Justify your answer. (3 points)
+### 11. What is a DMZ? 
+### Which Hosts/Servers/Services would you place in a DMZ? 
+### Justify your answer. (3 points)
 
-1. Öffentliche Server
-2. Zwischen Internet und internem Netzwerk
-3. Trennung sensibler Systeme von externen Zugriffen
+**DMZ (Demilitarisierte Zone)** ist ein Netzwerkbereich zwischen dem internen Netzwerk und dem Internet, der als Pufferzone dient.
+
+**Typische Hosts/Services in der DMZ:**
+
+1. Webserver
+2. Mailserver
+3. DNS-Server
+
+**Begründung:**
+- Diese Server müssen von außen erreichbar sein, sollen aber bei einem Angriff das interne Netzwerk nicht gefährden. 
+- Durch die Platzierung in der DMZ wird verhindert, dass ein kompromittierter öffentlicher Server direkten Zugriff auf interne Systeme erhält.
+
 
 ---
 
@@ -115,18 +127,34 @@ Zwei Transportprotokolle: TCP und UDP
 **Error:** sichtbarer Fehler, aber unklar ob Ursache Server
 **Failure:** z. B. Server ist komplett offline
 
+Fault: Die Ursache eines Problems, z. B. ein Programmierfehler oder eine fehlerhafte Konfiguration.
+Beispiel: Eine falsche IP-Adresse wurde im DNS-Record eingetragen.
+
+Error: Eine erkennbare Abweichung vom erwarteten Verhalten.
+Beispiel: Der Webbrowser zeigt „Server nicht gefunden“ an.
+
+Failure: Das tatsächliche Versagen des Systems, eine Funktion zu erfüllen.
+Beispiel: Der Webserver ist nicht erreichbar oder stürzt ab.
+
+
 ---
 
-### 13. Describe a problem you (could have) had during the labs. Which structured troubleshooting approach fits well to fix the problem? Which not? Justify your answer. (3 points)
+### 13. Describe a problem you (could have) had during the labs. 
+### Which structured troubleshooting approach fits well to fix the problem?
+### Which not? 
+### Justify your answer. (3 points)
 
-**Problem:** ping auf 8.8.8.8 ging nicht
+**Problem:** ping auf 8.8.8.8 nicht möglich
 **Geeignet:** Divide and Conquer
 **Nicht geeignet:** Top-Down
-**Begründung:** Schicht 3 war betroffen
+**Begründung:** Schicht 3 war betroffen. schneller Fokus auf Routing/IP
+
 
 ---
 
-### 14. Firewall a. What is the difference between a stateful inspection firewall and a packet filtering firewall? b. Describe an attack on a packet filtering firewall, which can be avoided by a stateful inspection firewall. (2 + 2 points)
+### 14. Firewall 
+- a. What is the difference between a stateful inspection firewall and a packet filtering firewall?
+- b. Describe an attack on a packet filtering firewall, which can be avoided by a stateful inspection firewall. (2 + 2 points)
 
 a) Stateful erkennt Verbindungsstatus, Packet Filter nur IP/Port
 b) Angriff: IP Spoofing – Paket sieht vertrauenswürdig aus, ist aber gefälscht
