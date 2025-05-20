@@ -84,9 +84,22 @@ TCP Flow Control ist dafür verantwortlich, dass ein Sender den Empfänger nicht
 
 **DNS-Architektur:**
 
-* Root-Server: kennt zuständige TLD-Server
-* TLD-Server: zuständig für Domains wie .com, .org, .at
-* Authoritative Nameserver: kennt die tatsächliche IP für die Domain (z. B. A, MX Record)
+Root-Nameserver
+
+* Zuständig für TLDs wie .com, .org, .at
+* Verweist auf zuständige TLD-Server
+  
+TLD-Nameserver (.at, .com, .org)
+
+* Zuständig für Domains unterhalb der TLD
+
+* Beispiel: .at kennt example.at
+
+Authoritative Nameserver
+
+* Zuständig für die konkrete Domain
+
+* Enthält Einträge wie A, AAAA, MX, CNAME
 
 Beispiel: [www.fh-campus.at](http://www.fh-campus.at) → Root verweist auf .at → TLD verweist auf fh-campus.at → Authoritative liefert IP
 
@@ -108,7 +121,16 @@ Beispiel: [www.fh-campus.at](http://www.fh-campus.at) → Root verweist auf .at 
 * POP3/IMAP: Abholung durch Bob
 
 **Skizze:**
-Alice (MUA) → SMTP → MTA → SMTP → MDA → POP3/IMAP → Bob (MUA)
+
+Alice (MUA) 
+  → SMTP → 
+    MTA (Absenderseite) 
+      → SMTP → 
+        MTA (Empfängerseite) 
+          → MDA → 
+            IMAP/POP3 → 
+              Bob (MUA)
+
 
 ---
 
@@ -152,14 +174,31 @@ Alice (MUA) → SMTP → MTA → SMTP → MDA → POP3/IMAP → Bob (MUA)
 
 ### 11. Describe a problem you (could have) had during the labs. 
 ### Which structured troubleshooting approach fits well to fix the problem? 
-### Which not? 
-### Which tools can be used for these approaches? 
+### Which not?  
 ### Justify your answer. (3 Points)
-
+kurz
 - **Problem:** Webserver konnte keine Verbindung zu 8.8.8.8 herstellen
 - **Geeignet:** Divide and Conquer → Analyse ab Layer 3 (Netzwerk)
 - **Nicht geeignet:** Top-down, weil kein Layer-7-Problem
 - **Tools:** ping, traceroute, ip route
+
+voll
+- **Problem:**  
+  Webserver konnte 8.8.8.8 nicht pingen (keine Verbindung zum Internet über das Gateway)
+
+- **Geeigneter Ansatz:**  
+  **Divide and Conquer**  
+  → Beginne bei Layer 3 (Netzwerk): IP-Konfiguration prüfen, `ip route`, `ping`, Gateway erreichbar?  
+  → Danach ggf. Layer 2 oder Firewall untersuchen
+
+- **Nicht geeigneter Ansatz:**  
+  **Top-Down**  
+  → Start auf Anwendungsebene (z. B. HTTP-Tests) ist ineffizient, wenn das Problem tiefer liegt
+
+- **Begründung:**  
+  Problem liegt auf Netzwerkschicht (Layer 3).  
+  Divide and Conquer ermöglicht gezielte, zeitsparende Fehlersuche.
+
 
 ---
 
